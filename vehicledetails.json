@@ -1,0 +1,36 @@
+{
+  "vehicle_details": [
+    {
+      "vehicle_type": "motorcycle",
+      "Mobile_no": 2345678901,
+      "vehicle_no": "Bihar1324",
+      "Date": "31-01-2022",
+      "Time": "21:13 pm",
+      "parking_slot": "motorcycle_spots"
+    },
+    {
+      "vehicle_type": "motorcycle",
+      "Mobile_no": 123456789,
+      "vehicle_no": "b789",
+      "Date": "31-01-2022",
+      "Time": "21:26 pm",
+      "parking_slot": "motorcycle_spots"
+    },
+    {
+      "vehicle_type": "motorcycle",
+      "Mobile_no": 2345678912,
+      "vehicle_no": "D5678",
+      "Date": "31-01-2022",
+      "Time": "22:00 pm",
+      "parking_slot": "motorcycle_spots"
+    },
+    {
+      "vehicle_type": "motorcycle",
+      "Mobile_no": 1245670986,
+      "vehicle_no": "BR101085",
+      "Date": "31-01-2022",
+      "Time": "22:30 pm",
+      "parking_slot": "motorcycle_spots"
+    }
+  ]
+}
