@@ -79,6 +79,8 @@ def read_json(fname):
         p_data = json.load(json_data)
         json_data.close()
         return p_data
+    else:
+        return 'Something is wrong'
 
 def write_in_json(fname, data):
     if fname == 'vehicledetails.json':
@@ -91,6 +93,8 @@ def write_in_json(fname, data):
         f = open(fname, 'w')
         json.dump(data, f, indent=2)
         f.close()
+    else:
+        return 'Somthing is wrong'
 
 def checkIn():
     print()
@@ -158,7 +162,7 @@ def checkout():
             print()
             print('Thank you for visit')
         else:
-            print('Wrong Token, Please Talk with Manager')
+            print('Your Token is wrong, Please Talk with Manager')
     elif vehicle_type == 'car':
         if token in all_tokens and token not in p_location_tokens["c_location_tokens"]:
             tokens["c_location_tokens"].append(token)
@@ -166,7 +170,7 @@ def checkout():
             print()
             print('Thank you for visit')
         else:
-            print('Wrong Token,  Please Talk with Manager')
+            print('Your Token is wrong,  Please Talk with Manager')
     elif vehicle_type == 'buses':
         if token in all_tokens and token not in p_location_tokens["b_location_tokens"]:
             tokens["b_location_tokens"].append(token)
@@ -176,11 +180,11 @@ def checkout():
         else:
             print('Wrong token')
     else:
-        print('Enter valid token, Please Talk with Manager')
+        print('Your token is wrong, Please Talk with Manager')
 
 def slip_print(vehicle_t, vehicles_n, date, time, parking_slot, token, amount):
     print()
-    print('        Parking Slip            ')
+    print('      Parking Slip            ')
     print()
     print('vehicle_type : ', vehicle_t)
     print('Vehicle number: ', vehicles_n)
@@ -196,7 +200,7 @@ def main():
     agent_input = input('For signup press 1 or For login press 2.  ')
     if agent_input == '1':
         singup()
-    else:
+    elif agent_input == '2':
         outPut = agent_login()
         print()
         if outPut == 'invalid':
@@ -215,15 +219,17 @@ def main():
                 if agent_choice == 'yes':
                     break 
                 elif agent_choice == 'no':
-                    choose = input('Customer in/out. Select checkin/checkout ')
-                    if choose == 'checkin':
+                    choose = input('For customer chekin and checkout:- Select in/out ')
+                    if choose == 'in':
                         checkIn()
-                    elif choose == 'checkout':
+                    elif choose == 'out':
                         checkout()
                     else:
                         print('Enter valid input')
                 else:
-                    print('Invalid input')
+                   print('Invalid input')
+    else:
+        print('please enter correct input')
 main()
 
 

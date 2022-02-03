@@ -1,9 +1,23 @@
 {
   "m_location_tokens": [
-    1
+    1,
+    2,
+    4,
+    5,
+    3
   ],
   "c_location_tokens": [
+    1,
+    3,
+    4,
+    5,
+    2
   ],
   "b_location_tokens": [
+    2,
+    3,
+    4,
+    5,
+    1
   ]
 }
