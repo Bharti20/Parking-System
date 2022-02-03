@@ -3,7 +3,7 @@ import re
 import random
 
 main_dic = {'vehicle_details': []}
-all_tokens = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+all_tokens = [1,2,3,4,5,6,7,8,9,10]
 
 def singup():
     username = input('Please enter your name  ')
@@ -102,11 +102,11 @@ def checkIn():
     print()
     print('Vehicles and Charge -  1.Motorcycle: 30   2.Car: 50   3.Bus: 70')
     print()
-    vehicle_type = input('Enter veicle type 1.motorcycle 2. car 3. buses    ')
-    vehicle_no = input('Enter vehicle number...')
     mobile_no = int(input('Enter your mobile number  '))
     date = input('Enter date    ' )
     time = input('Enter in time ')
+    vehicle_no = input('Enter vehicle number...')
+    vehicle_type = input('Enter veicle type 1.motorcycle 2. car 3. buses    ')
     p_location_tokens = read_json("location_tokens.json")
     if vehicle_type == '1':
         if len(p_location_tokens["m_location_tokens"]) == 0:
@@ -206,10 +206,10 @@ def main():
         if outPut == 'invalid':
             return
         else:
-            choose = input('Customer in/out. Select checkin/checkout ')
-            if choose == 'checkin':
+            choose = input('For customer chekin and checkout:- Select in/out ')
+            if choose == 'in':
                 checkIn()
-            elif choose == 'checkout':
+            elif choose == 'out':
                 checkout()
             else:
                 print('Enter valid input') 

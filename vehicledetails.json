@@ -10,27 +10,11 @@
     },
     {
       "vehicle_type": "motorcycle",
-      "Mobile_no": 3456788976,
-      "vehicle_no": "UP32KW4457",
-      "Date": "03-02-2022",
-      "Time": "18:14 pm",
+      "Mobile_no": 4567896789,
+      "vehicle_no": "BH3556",
+      "Date": "12-01-2022",
+      "Time": "18:56 pm",
       "parking_slot": "motorcycle_spots"
-    },
-    {
-      "vehicle_type": "Car",
-      "Mobile_no": 3456789908,
-      "vehicle_no": "HR26DO67",
-      "Date": "23-01-2020",
-      "Time": "8:00 am",
-      "parking_slot": "car_spots"
-    },
-    {
-      "vehicle_type": "Bus",
-      "Mobile_no": 3456783487,
-      "vehicle_no": "BUS656",
-      "Date": "14-01-2022",
-      "Time": "9:00 am",
-      "parking_slot": "bus_spots"
     }
   ]
 }
